@@ -1,11 +1,43 @@
-@import filePath
+@import './_variaveis'
     
-    *
+*
     margin:0
     padding: 0
     box-sizing: border-box
     text-decoration: none
     outline: none
-    border:     
+    
     list-style: none
     color: #f4f4f4
+
+    .titulo
+        width: 100%
+        position: relative
+        h1
+            font-size: $fonte-titulo
+            margin-bottom: 22px
+
+
+        div
+            width: 100%
+            height: 2px
+            backgraund-color: $cinza
+            position: relative
+
+        &::before
+            content: ''    
+            width: 20%
+            height: 2%
+            beckgrande-color: $primaria
+            position: absolute
+            top: 0
+            left: 0
+        
+
+        a
+            font-size: $fonte-pequena
+            color: $cinza
+            position: absolute
+            right: 0
+            button: 50px
+            transform: translateY(50%)
